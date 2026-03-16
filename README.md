@@ -1,6 +1,6 @@
 # Remote occupancy indicator
 
-ESP32 based occupancy marker for meeting rooms, office cublicles and etc. and a simple remote for it. ESP-NOW is used for communication between the the boards, which are using the ESP32-C3 Super Mini
+ESP32 based occupancy marker for meeting rooms, office cubicles and etc. and a simple remote for it. ESP-NOW is used for communication between the the boards, which are using the ESP32-C3 Super Mini
 
 ## Assembling
 1. Print the both the Indicator and Remote top and bottom parts in a filament of your choice
@@ -14,7 +14,7 @@ ESP32 based occupancy marker for meeting rooms, office cublicles and etc. and a 
 2. Flash the MAC-Finder to both the boards and write down the MAC Address which will be sent in the Serial Monitor
 3. In the indicator firmware file change the broadcast MAC address to the one the remote gave you
 4. Flash!
-5. Now in the remote firmware file change the boardcast MAC address to the one the indicator gave you
+5. Now in the remote firmware file change the broadcast MAC address to the one the indicator gave you
 6. Flash!
 7. Now the Indicator and Remote will connect to each other automatically
 
