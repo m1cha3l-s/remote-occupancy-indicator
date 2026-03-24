@@ -3,11 +3,6 @@
 #include <esp_now.h>
 #include <Adafruit_NeoPixel.h>
 
-
-int button1 = 3;
-int button2 = 2;
-int button3 = 2;
-
 Adafruit_NeoPixel remote(7, 0, NEO_GRB + NEO_KHZ800);
 
   //esp-now stuff
