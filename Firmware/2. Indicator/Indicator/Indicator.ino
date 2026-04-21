@@ -7,7 +7,7 @@
 Adafruit_NeoPixel indicator(9, 3, NEO_GRB + NEO_KHZ800);
 
   //esp-now stuff
-uint8_t broadcastAddress[] = {0xC8, 0xC9, 0xA3, 0xC7, 0xFC, 0xB0};   //MAC Address format 11:22:33:44:55:66 (MAC of your remote for sending back which color is shown every time it's changed)
+uint8_t broadcastAddress[] = {0xE8, 0x3D, 0xC1, 0x8E, 0x54, 0xD8};   //MAC Address format 11:22:33:44:55:66 (MAC of your remote for sending back which color is shown every time it's changed)
 #define CHANNEL 0   //channel which esp-now uses
 
 float Remote_set;
@@ -44,8 +44,7 @@ void setup() {
   esp_now_init();
   peerInfo.channel = CHANNEL;
   peerInfo.encrypt = false;
-
-  esp_now_register_send_cb(OnDataSent);
+  
   memcpy(peerInfo.peer_addr, broadcastAddress, 6);
 
   esp_now_add_peer(&peerInfo);
